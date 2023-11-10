@@ -25,4 +25,9 @@ CREATE TABLE [dbo].[Clients](
 )
 GO
 
+-- Agregar dos colas a la tabla [dbo].[Queues]
+INSERT INTO [dbo].[Queues] ([QueueName], [DurationMinutes]) VALUES ('Cola1', 2)
+INSERT INTO [dbo].[Queues] ([QueueName], [DurationMinutes]) VALUES ('Cola2', 3)
+GO
+
 
