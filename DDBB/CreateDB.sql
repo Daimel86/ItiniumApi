@@ -1,38 +1,28 @@
-USE [INITIUM_TEST]
+USE master
 GO
-/****** Object:  Table [dbo].[Clients]    Script Date: 11/10/2023 6:08:25 PM ******/
-SET ANSI_NULLS ON
+
+-- Crear la base de datos
+CREATE DATABASE INITIUM_TEST
 GO
-SET QUOTED_IDENTIFIER ON
+
+USE INITIUM_TEST
 GO
-CREATE TABLE [dbo].[Clients](
-	[Id] [int] NOT NULL,
-	[ClientName] [nchar](100) NOT NULL,
-	[RegistrationDate] [datetime] NOT NULL,
-	[QueueId] [int] NOT NULL,
- CONSTRAINT [PK_Clients] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
-GO
-/****** Object:  Table [dbo].[Queues]    Script Date: 11/10/2023 6:08:25 PM ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+
+-- Crear la tabla [dbo].[Queues]
 CREATE TABLE [dbo].[Queues](
-	[Id] [int] IDENTITY(1,1) NOT NULL,
-	[QueueName] [nchar](100) NOT NULL,
-	[DurationMinutes] [int] NOT NULL,
- CONSTRAINT [PK_Queues] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
-) ON [PRIMARY]
+    [Id] [int] IDENTITY(1,1) PRIMARY KEY,
+    [QueueName] [nchar](100) NOT NULL,
+    [DurationMinutes] [int] NOT NULL
+)
 GO
-ALTER TABLE [dbo].[Clients]  WITH CHECK ADD  CONSTRAINT [FK_Clients_Queues] FOREIGN KEY([QueueId])
-REFERENCES [dbo].[Queues] ([Id])
+-- Crear la tabla [dbo].[Clients]
+CREATE TABLE [dbo].[Clients](
+    [Id] [int] PRIMARY KEY,
+    [ClientName] [nchar](100) NOT NULL,
+    [RegistrationDate] [datetime] NOT NULL,
+    [QueueId] [int] NOT NULL,
+    CONSTRAINT [FK_Clients_Queues] FOREIGN KEY([QueueId]) REFERENCES [dbo].[Queues]([Id])
+)
 GO
-ALTER TABLE [dbo].[Clients] CHECK CONSTRAINT [FK_Clients_Queues]
-GO
+
+
