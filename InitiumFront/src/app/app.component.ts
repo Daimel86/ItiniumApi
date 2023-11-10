@@ -32,6 +32,7 @@ export class AppComponent implements OnInit {
           } else if (err.error && err.error.title) {
             alert(err.error.title);
           } else {
+            console.log(err.error)
             alert("Error al agregar el cliente. Por favor, verifica los datos e intenta nuevamente.");
           }
 
