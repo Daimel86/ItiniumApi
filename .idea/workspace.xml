@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e948b9c-b070-4c78-8d10-a2520e769164" name="Changes" comment="ddd">
-      <change afterPath="$PROJECT_DIR$/InitiumFront/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/src/app/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/src/app/app.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/src/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InitiumFront/tsconfig.spec.json" afterDir="false" />
-    </list>
+    <list default="true" id="8e948b9c-b070-4c78-8d10-a2520e769164" name="Changes" comment="ddd" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +34,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/DaimelRubénGonzálezA/source/repos/InitiumTest",
+    "last_opened_file_path": "C:/Users/DaimelRubénGonzálezA/source/repos/InitiumFront",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699619444071</updated>
-      <workItem from="1699619445084" duration="659000" />
+      <workItem from="1699619445084" duration="713000" />
     </task>
     <task id="LOCAL-00001" summary="ddd">
       <option name="closed" value="true" />
