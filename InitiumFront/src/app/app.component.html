@@ -1,0 +1,22 @@
+<div class="form">
+  <div>
+    <label for="clientId">ID: </label>
+    <input type="text" id="clientId" #clientId/>
+  </div>
+  <div>
+    <label for="clientName">Nombre del Cliente: </label>
+    <input type="text" id="clientName" #clientName/>
+  </div>
+  <button (click)="addClient(clientId, clientName)">Guardar</button>
+</div>
+
+<div>
+  <div *ngFor="let queue of queues">
+    <div class="cola">
+      <span class="span">{{queue.queueName}} :</span>
+      <div class="cola-cliente" *ngFor="let c of queue.clients">
+        <span>{{c.clientName}}</span>
+      </div>
+    </div>
+  </div>
+</div>
