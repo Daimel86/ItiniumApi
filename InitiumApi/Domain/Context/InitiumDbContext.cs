@@ -17,6 +17,7 @@ public class InitiumDbContext : DbContext, IInitiumDbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfiguration(new ClientsEntityTypeConfiguration());
+        modelBuilder.ApplyConfiguration(new QueuesEntityTypeConfiguration());
 
         base.OnModelCreating(modelBuilder);
     }

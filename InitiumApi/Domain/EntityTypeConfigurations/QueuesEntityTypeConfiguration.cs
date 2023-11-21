@@ -8,7 +8,7 @@ public class QueuesEntityTypeConfiguration : IEntityTypeConfiguration<QueuesEnti
 {
     public void Configure(EntityTypeBuilder<QueuesEntity> builder)
     {
-        builder.ToTable("Queue", "dbo");
+        builder.ToTable("Queues", "dbo");
 
         builder.HasKey(k => k.Id);
 

@@ -1,10 +1,11 @@
-﻿using Domain.Entities;
+﻿using Api.Controllers;
+using Domain.Entities;
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using Repositories.Contracts;
 
-namespace Api.Controllers.Tests
+namespace ApiTests.Controllers
 {
     [TestClass()]
     public class QueuesControllerTests

@@ -32,7 +32,7 @@ public class QueuesRepository : IQueuesRepository
         }
     }
 
-    public List<ClientsEntity> ProcessQueue(List<QueuesEntity> queues)
+    public IEnumerable<ClientsEntity> ProcessQueue(List<QueuesEntity> queues)
     {
         var toRemove = new List<ClientsEntity>();
         var date = DateTime.UtcNow;

@@ -19,7 +19,7 @@ namespace RepositoriesTests
 
             var queue = new List<QueuesEntity> {
                 new QueuesEntity() {
-                    Clients = new List<ClientsEntity> { 
+                    Clients = new List<ClientsEntity> {
                         new ClientsEntity {
                             ClientName = "Pepe",
                             Id = 1,
